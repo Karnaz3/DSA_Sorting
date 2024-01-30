@@ -1,0 +1,72 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .button-container {
+            text-align: center;
+            animation: fadeIn 1s ease-out; /* Add a fade-in animation */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <div class="button-container">
+            <a href="{% url 'bubble' %}">
+                <button>Bubble Sort</button>
+            </a>
+            <a href="{% url 'insertion' %}">
+                <button>Insertion Sort</button>
+            </a>
+            <a href="{% url 'selection' %}">
+                <button>Selection Sort</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
